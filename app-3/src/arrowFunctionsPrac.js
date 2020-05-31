@@ -2,6 +2,8 @@ function sum(a, b){
     return a + b
 }
 
+function sum(a, b)
+
 let sum2 = (a, b) => a + b
 
 

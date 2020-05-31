@@ -1,26 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import App from '../../app-3/src/App';
+class Person {
+  constructor(name) {
+      this.name = name
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  printNameArrow(){
+      setTimeout(()=>{
+          console.log('Arrow: ' + this.name)
+      }, 100)
+  }
+
+  printNameFunction() {
+      setTimeout(function() {
+          console.log('Function: ' + this.name)
+      }, 100)
+  }
 }
+
+let person = new Person('Bob')
+person.printNameArrow()
+person.printNameFunction()
+console.log(this.name)
 
 export default App;
