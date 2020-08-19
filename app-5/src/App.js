@@ -1,27 +1,16 @@
-import React from 'react';
-import App from '../../app-3/src/App';
-class Person {
-  constructor(name) {
-      this.name = name
-  }
+import React, { Component } from 'react';
+import logo from "./logo.svg";
+import "./App.css";
+import Image from "./Image";
 
-
-  printNameArrow(){
-      setTimeout(()=>{
-          console.log('Arrow: ' + this.name)
-      }, 100)
-  }
-
-  printNameFunction() {
-      setTimeout(function() {
-          console.log('Function: ' + this.name)
-      }, 100)
+class App extends Component {
+    render(){
+        return(
+        <div className="App">
+        <Image url={"https://http.cat/409"} />
+      </div>
+    );
   }
 }
-
-let person = new Person('Bob')
-person.printNameArrow()
-person.printNameFunction()
-console.log(this.name)
 
 export default App;
