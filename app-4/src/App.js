@@ -15,3 +15,6 @@ class App extends Component {
 }
 
 export default App;
+
+
+// If <Login /> was actually <Header />, I would put <Nav /> inside of <Header />. So then <Header /> would be a child of <App /> and <Nav /> would be a child of <Header />.
