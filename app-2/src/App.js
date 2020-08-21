@@ -24,3 +24,14 @@ export default App;
 // Need to add a stateful part to App component
 // Need data to be in an array.
 // This is showing an array of data on state, that is then shown on the DOM as a list. 
+// AXIOS -  makes requests to your server from your front-end
+
+
+// RENDER - whenever a component renders => it's sending an AXIOS request for those variables from the parent 
+//  =>  (that's why you import the necessary files/componentns at the top of App.js in src; 
+// AS the files and/or the componenents from other other files that'll be used, need to be accesiable further down using SUPER & CONSTRUCTOR
+
+//Just like with Axios - 
+
+
+// If <Login /> was actually <Header />, I would put <Nav /> inside of <Header />. So then <Header /> would be a child of <App /> and <Nav /> would be a child of <Header />.

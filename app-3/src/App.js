@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+// import foodsToDisplay from '../../app-3/src/App';
 
 class App extends Component{
   constructor() {
